@@ -31,9 +31,39 @@ printf(
         "|                PRESS ENTER TO BEGIN...                    |\n"
     );
     getchar();
+// SELECTION CLASS WITH SET HEALTH (100)
+  printf("Choose your class (Warrior, Rogue, Mage, Ranger): ");
+  scanf("%s", player_class);
+  clear_input_buffer();
+  if (strcmp(player_class, "Warrior") == 0) {
+    health = 100;
+  } else if (strcmp(player_class, "Rogue") == 0) {
+    health = 100;
+  } else if (strcmp(player_class, "Mage") == 0) {
+    health = 100;
+  } else if (strcmp(player_class, "Ranger") == 0) {
+    health = 100;
+  } else {
+    pringf("Invalid class chosen \n");
+    return 1;
+  }
+// WEAPON SELECTION WITH SET DAMAGE
 
-
-
+  printf("Choose your weapon (Greatsword, Daggers, Staff, Bow): ");
+  scanf("%s", weapon);
+  clear_input_buffer();
+  if (strcmp(player_class, "Warrior") == 0) {
+    health = 100;
+  } else if (strcmp(player_class, "Rogue") == 0) {
+    health = 100;
+  } else if (strcmp(player_class, "Mage") == 0) {
+    health = 100;
+  } else if (strcmp(player_class, "Ranger") == 0) {
+    health = 100;
+  } else {
+    pringf("Invalid class chosen \n");
+    return 1;
+  }
 
 }
 
